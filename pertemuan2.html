@@ -3,69 +3,126 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Pertemuan 2 Postest</title>
+    <style>
+      .main-content {
+        display: flex;
+        justify-content: center;
+      }
+      h1 {
+        text-align: center;
+      }
+    </style>
   </head>
-  <style>
-    table {
-      width: 100%;
-    }
-    table,
-    th,
-    td {
-      border: 1px solid black;
-    }
-
-    h3,
-    p {
-      text-align: center;
-    }
-  </style>
   <body>
-    <h2>HTML TABLE</h2>
-    <table>
+    <!-- -------------------      NOTE      ---------------------------
+     UNTUK POSISI HEADING(H1) DAN TABEL TIDAK PERLU DIATUR UNTUK RATA TENGAH.
+     KARENA AGAR MAHASISWA BISA MELIHAT PERBEDAAN ANTARA HEADING DAN TABEL.
+     JADI TIDAK PERLU DIATUR UNTUK RATA TENGAH.
+
+
+     COLSPAN UNTUK MENGGABUNGKAN 2 ATAU LEBIH KOLOM MENJADI SATU.
+     ROWSPAN UNTUK MENGGABUNGKAN 2 ATAU LEBIH BARIS MENJADI SATU.
+
+     CELLPADDING UNTUK MEMBERIKAN JARAK ANTARA TEKS DENGAN BORDER TABEL.
+     CELLSPACING UNTUK MEMBERIKAN JARAK ANTARA BORDER TABEL DENGAN BORDER TABEL LAINNYA.
+
+     HYPERLINK
+     TARGET _blank BERFUNGSI AGAR LINK KETIKA DI KLIK AKAN MEMBUKA TAB BARU.
+     -->
+
+    <!-- Start table -->
+    <h1>Data Mahasiswa</h1>
+    <div class="main-content">
+      <table border="1" cellpadding="10" cellspacing="1">
+        <thead>
+          <tr>
+            <th rowspan="2">Nama</th>
+            <th rowspan="2">NIM</th>
+            <th colspan="2">Prodi</th>
+            <th rowspan="2">Foto</th>
+            <th rowspan="2">Sosial Media</th>
+          </tr>
+          <tr>
+            <th>Fakultas</th>
+            <th>Jurusan</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Adit</td>
+            <td>2400018320</td>
+            <td>Teknik</td>
+            <td>Informatika</td>
+            <td><img src="./boy.png" alt="Foto Adit" width="50" /></td>
+            <td>
+              <a href="https://www.aditcontoh.com" target="_blank"
+                >Profil Adit</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>Denis</td>
+            <td>2400018241</td>
+            <td>Teknik</td>
+            <td>Informatika</td>
+            <td><img src="./boy1.png" alt="Foto Denis" width="50" /></td>
+            <td>
+              <a href="https://www.deniscontoh.com" target="_blank"
+                >Profil Denis</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>Rina</td>
+            <td>2400010045</td>
+            <td>Ekonomi</td>
+            <td>Manajemen</td>
+            <td>
+              <img src="./girl.png" width="50" alt="Foto Rina" />
+            </td>
+            <td>
+              <a href="https://www.rinacontoh.com" target="_blank"
+                >Profil Rina</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>Budi</td>
+            <td>2400008129</td>
+            <td>Hukum</td>
+            <td>Hukum</td>
+            <td>
+              <img src="./man.png" width="50" alt="Foto Budi" />
+            </td>
+            <td>
+              <a href="https://www.cukicontoh.com" target="_blank"
+                >Profil Budi</a
+              >
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- End table -->
+    </div>
+    <br />
+
+    <table border="1" cellpadding="10" cellspacing="1">
       <tr>
-        <th>Nama</th>
-        <th>NIM</th>
+        <th rowspan="3">Nama</th>
+        <th colspan="2">NIM</th>
         <th>Prodi</th>
       </tr>
       <tr>
-        <td>Fadhli</td>
-        <td>Budi</td>
-        <td>Akbar</td>
+        <td>11</td>
+        <td>21</td>
+        <td>31</td>
       </tr>
       <tr>
-        <td>1</td>
-        <td>2</td>
-        <td>3</td>
-      </tr>
-      <tr>
-        <td>Informatika</td>
-        <td>Informatika</td>
+        <td>12</td>
+        <td>22</td>
+        <td>32</td>
       </tr>
     </table>
-
-    <h3>Halo</h3>
-    <p>Ini adalah paragraf pertama</p>
-
-    <table border="1">
-      <tr>
-        <td>Nama</td>
-        <td>Umur</td>
-      </tr>
-      <tr>
-        <td>Ali</td>
-        <td>20</td>
-      </tr>
-    </table>
-
-    <button id="btn">Click</button>
-
-    <script>
-      console.log("Hello World");
-
-      document.getElementById("btn").onclick = function () {
-        alert("Hello World");
-      };
-    </script>
   </body>
 </html>
