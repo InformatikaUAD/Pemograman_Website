@@ -4,7 +4,14 @@
     echo "<link rel='stylesheet' href='style-lihat.css'>";
     echo "</head>";
     $lines = file("guestbook.txt");
-    $myDir = "D:/xampp/htdocs/postest/file_upload";
+    $myDir = "./file_upload";
+
+    // Check if directory exists
+    if (!is_dir($myDir)) {
+        echo "Directory tidak ditemukan. Membuat directory baru...<br>";
+        mkdir($myDir, 0777, true);
+        echo "Directory berhasil dibuat.<br>";
+    }
 
     echo "<table>";
 

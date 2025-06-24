@@ -13,7 +13,7 @@
 
     $lokasi_file = $_FILES['fupload']['tmp_name'];
     $nama_file   = $_FILES['fupload']['name'];
-    $direktori   = "D:/xampp/htdocs/postest/file_upload/$nama_file";
+    $direktori   = "./file_upload/$nama_file";
     move_uploaded_file($lokasi_file, $direktori);
     
     fputs($fp, "$nama|$alamat|$email|$status|$uploadedFile|$deskripsi\n");
