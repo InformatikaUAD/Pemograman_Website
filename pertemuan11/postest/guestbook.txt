@@ -1,1 +1,4 @@
-Tia Kusuma|Yogyakarta|tiakusuma@gmail.com|Single|review journal KCB.pdf|Jurnal KCB
+Fadhli Akbar|Yogyakarta|fadhliakbar125@gmail.com|Single|Comparative_Study_of_Some_Deep_Learning_Object_Detection_Algorithms.pdf|Journal Deteksi Objek
+Fadhli Akbar|Yogyakarta|fadhliakbar125@gmail.com|Menikah|Comparative_Study_of_Some_Deep_Learning_Object_Detection_Algorithms.pdf|Journal Object Detection
+Muhamad Fadhli Akbar|Yogyakarta|fadhliakbar125@gmail.com|Menikah|Comparative_Study_of_Some_Deep_Learning_Object_Detection_Algorithms.pdf|YOLOv12 for Object Detection
+Ardian|Yogyakarta|ardian@gmail.com|Menikah|Detektif Sampah  Klasifikasi Jenis Sampah Organik dan Anorganik Menggunakan Metode YOLOv5 BerbasisWebsite.pdf|Deteksi Sampah
