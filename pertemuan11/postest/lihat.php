@@ -24,7 +24,8 @@
             echo "<tr><td>Status </td><td>: $pisah[3]</td></tr>";
             while($tmp = readdir($dir)){
                 if($tmp == $pisah[4])
-                echo "<tr><td>Buku </td><td>:<a href='$tmp' target='_blank'>$tmp</a></td></tr>";
+                    // Fix the link to include the directory path
+                    echo "<tr><td>Buku </td><td>:<a href='$myDir/$tmp' target='_blank'>$tmp</a></td></tr>";
             }
             closedir($dir);
             echo "<tr><td>Deskripsi Buku </td><td>: $pisah[5]</td></tr>";

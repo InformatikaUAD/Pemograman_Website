@@ -15,7 +15,12 @@ if (isset($_FILES['fupload']) && isset($_POST['deskripsi'])) {
         echo "Isi folder (klik link untuk download): <br>";
 
         while ($tmp = readdir($dir)) {
-            echo "<a href='$myDir$nama_file' target='_blank'>$tmp</a><br>";
+            // Skip directory entries . and ..
+            if ($tmp == '.' || $tmp == '..') {
+                continue;
+            }
+            // Use the current file name ($tmp) for each link, not always $nama_file
+            echo "<a href='$myDir$tmp' target='_blank'>$tmp</a><br>";
         }
 
         closedir($dir);
